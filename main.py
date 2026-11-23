@@ -20,6 +20,11 @@ OUTPUT_PATH = "/output/entry.txt"
 
 
 def main() -> None:
+    # Self-check the house gate before writing: 1-240 UTF-8 characters,
+    # not only whitespace, one sentence.
+    text = PITCH.strip()
+    assert 1 <= len(text) <= 240, f"pitch is {len(text)} characters"
+    assert text, "pitch is only whitespace"
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8", newline="\n") as f:
         f.write(PITCH)
