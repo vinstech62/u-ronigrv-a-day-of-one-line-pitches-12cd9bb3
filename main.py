@@ -10,10 +10,9 @@ Deterministic: the same fixed sentence on every run.
 import os
 
 PITCH = (
-    "Tell make.fun the app idea you've been carrying around, in plain words, "
-    "and an AI agent will build you a first working version today \u2014 no code, "
-    "no jargon, just your idea becoming something you can actually tap "
-    "while you watch it happen."
+    "You've been carrying that app idea around for ages \u2014 tell it to "
+    "make.fun in plain words and an AI agent will build you a first version "
+    "you can tap today, with no code and nothing to lose."
 )
 
 OUTPUT_PATH = "/output/entry.txt"
